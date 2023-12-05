@@ -6,34 +6,51 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/6e8825ecb6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="myheader">
 
         <img id="logo" alt="logo" src="logo2.png">
+        <button id="emailbtn">Hire me!</button>
         <button id="dlbtn">Resume <i class="fa-solid fa-download"></i></button>
 
     </div>
-    <div id="bio"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></div>
+    <div id="bio"><p>Specialized in scalable and responsive web applications, 
+        combining creativity and technical skills to deliver seamless user experiences.</p></div>
     <div id="sphere"><p>Contact me</p> <br/> <i class="fa-solid fa-arrow-down-long"></i></div>
     <img id="bg" src="bg2.jpg">
     <div><p id="year">2023</p></div>
     <div><p id="web">WEB</p></div>
     <div><p id="dev">DEVELOPER</p></div>
 
-    <div class="navigation">
- 
-        <div id="home" class="item"><i class="fa-solid fa-house fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-regular fa-id-card fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-brands fa-stack-overflow fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-solid fa-phone fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-brands fa-instagram fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-solid fa-envelope fa-2xl" style="color: #f0f0f0;"></i></div>
-        <div class="item"><i class="fa-brands fa-github fa-2xl" style="color: #f0f0f0;"></i></div>
+    <img id="me" src="me.png">
 
+
+    <h1 class="textt"></h1>
+
+    <div class="navigation">
+        <button onclick="openpopup()" class="item"><i class="fa-regular fa-id-card fa-2xl" style="color: #f0f0f0;"></i></button>
+        <button onclick="openpopup()" class="item"><i class="fa-brands fa-stack-overflow fa-2xl" style="color: #f0f0f0;"></i></button>
+        <button onclick="openpopup()" class="item"><i class="fa-solid fa-phone fa-2xl" style="color: #f0f0f0;"></i></button>
+        <button onclick="openpopup()" class="item"><i class="fa-solid fa-envelope fa-2xl" style="color: #f0f0f0;"></i></button>
+        <a class="item"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #f0f0f0;"></i></button>
+        <a class="item"><i class="fa-brands fa-instagram fa-2xl" style="color: #f0f0f0;"></i></button>
+        <a class="item"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f0f0f0;"></i></button>
+        <a class="item"><i class="fa-brands fa-github fa-2xl" style="color: #f0f0f0;"></i></button>
+
+        <div class="popup" id="popup">
+            <i class="fa-regular fa-id-card fa-2xl"></i>
+            <h2>heading</h2>
+            <button class="close-btn" onclick="closepopup()"> X </button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
