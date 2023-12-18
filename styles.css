@@ -1,6 +1,5 @@
 #logo {
-  width: 300px;
-  height: 80px;
+  width: 15%;
   margin-left: 20px;
 }
 
@@ -53,11 +52,11 @@ body {
 }
 
 #bg {
-  width: 680px;
-  height: 430px;
+  width: 50%;
+  height: 50%;
   border-radius: 25px;
   margin-left: 25%;
-  margin-top: 30px;
+  margin-top: 1%;
 }
 
 #web {
@@ -99,7 +98,7 @@ body {
 }
 
 #me {
-  height: 600px;
+  height: 76%;
   margin-top: -390px;
   margin-left: -12px;
   position: absolute;
@@ -162,6 +161,7 @@ button {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  cursor: pointer;
 }
 
 .close-btn {
@@ -175,9 +175,9 @@ button {
   color: black;
 }
 
-.popup {
+.profilepopup {
   width: 600px;
-  height: 400px;
+  height: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -190,41 +190,55 @@ button {
   margin: auto;
 }
 
-.open-popup {
+.open-profilepopup {
   transform: scale(0.5);
   visibility: visible;
   top: 50%;
   position: absolute;
 }
 
-.popup i {
+.profilepopup i {
   width: 100px;
   height: 100px;
   margin: auto;
 }
+
 .stackpopup {
   width: 350px;
-  height: 400px;
+  height: auto;
+  margin-left: -420px;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: block;
   transform: scale(0);
-  transition: ease-in 0.25s;
   visibility: hidden;
   position: absolute;
-  margin-left: -500px;
 }
 
 .open-stackpopup {
   transform: scale(0.5);
   visibility: visible;
-  top: 50%;
+  margin-top: -212px;
   position: absolute;
 }
 
-.accordion-container {
+.stack-container {
   min-width: 330px;
+  padding: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(254, 254, 254, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: xx-large;
+}
+
+.profile-container {
+  width: 530px;
+  min-height: 300px;
+  margin-left: -500px;
   padding: 16px;
   border-radius: 16px;
   overflow: hidden;
@@ -239,22 +253,15 @@ button {
   border-radius: 8px;
   padding: 12px;
   display: flex;
-  cursor: pointer;
   align-items: center;
   justify-content: start;
   gap: 8px;
-  transition: all ease-in-out 0.25s;
   color: white;
-}
-
-.main-item--open {
-  border-radius: 8px;
   background-color: white;
-  transition: all 200ms;
   color: black;
 }
 
-.accordion-container > ul {
+.stack-container > ul {
   max-height: 0px;
   list-style-type: none;
   margin: 0px;
@@ -262,7 +269,7 @@ button {
   opacity: 0;
 }
 
-.main-item--open + ul {
+.main-item + ul {
   visibility: visible;
   max-height: 380px;
   padding-left: 22px;
@@ -272,7 +279,7 @@ button {
   flex-direction: column;
 }
 
-.accordion-container > ul > li {
+.stack-container > ul > li {
   height: 45px;
   display: flex;
   width: 100%;
@@ -286,11 +293,6 @@ button {
   height: 48px;
 }
 
-.accordion-container > ul > li:last-child > .line-vertical {
-  height: 25px;
-  align-self: flex-start;
-}
-
 .line-horizontal {
   display: block;
   background-color: white;
@@ -301,9 +303,21 @@ button {
 #pb {
   width: 300px;
   height: 150px;
-  margin-top: 640px;
+  margin-top: 630px;
   margin-left: 82%;
   border-radius: 10px;
   position: absolute;
   color: #b2b2b2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 1360px){ 
+.navigation{
+  visibility: hidden;
+}
+  
 }

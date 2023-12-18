@@ -1,17 +1,20 @@
-const popUp = document.getElementById("popup");
-const stackPopUp = document.getElementById("stackpopup");
-const mainItems = document.querySelectorAll(".main-item");
+const ProfilePopUp = document.getElementById("profilepopup");
+const StackPopUp = document.getElementById("stackpopup");
+const PhonePopUp = document.getElementById("phonepopup");
+const EmailPopUp = document.getElementById("emailpopup");
 
-function openpopup() {
-  popUp.classList.toggle("open-popup");
+function profilepopup() {
+  ProfilePopUp.classList.toggle("open-profilepopup");
 }
 
 function stackopenpopup() {
-  stackPopUp.classList.toggle("open-stackpopup");
+  StackPopUp.classList.toggle("open-stackpopup");
 }
 
-mainItems.forEach((mainItem) => {
-  mainItem.addEventListener("click", () => {
-    mainItem.classList.toggle("main-item--open");
-  });
-});
+function phonepopup() {
+  PhonePopUp.classList.toggle("open-phonepopup");
+}
+
+function stackopenpopup() {
+  EmailPopUp.classList.toggle("open-emailpopup");
+}
