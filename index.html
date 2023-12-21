@@ -1,123 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/6e8825ecb6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6e8825ecb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="myheader">
-
-        <img id="logo" alt="logo" src="logo2.png">
-        <button id="emailbtn">Hire me!</button>
-        <button id="dlbtn">Resume <i class="fa-solid fa-download"></i></button>
-
+      <img id="logo" alt="logo" src="logo2.png" />
+      <button id="dlbtn">Resume <i class="fa-solid fa-download"></i></button>
     </div>
-    <div id="bio"><p>Specialized in scalable and responsive web applications, 
-        combining creativity and technical skills to deliver seamless user experiences.</p></div>
+    <div id="bio">
+      <p>
+        Specialized in scalable and responsive web applications, combining
+        creativity and technical skills to deliver seamless user experiences.
+      </p>
+    </div>
 
-        <div id="pb"><p>Powered By: Get-IT Solutions</p></div>
-    <div id="sphere"><p>Contact me</p> <br/> <i class="fa-solid fa-arrow-down-long"></i></div>
+    <div id="pb"><p>Powered By: Get-IT Solutions</p></div>
+    <div id="sphere">
+      <p>Contact me</p>
+      <br />
+      <i class="fa-solid fa-arrow-down-long"></i>
+    </div>
     <div id="sphere2"><i class="fa-solid fa-id-badge fa-xl"></i></div>
-    <img id="bg" src="bg2.jpg">
+    <img id="bg" src="bg2.jpg" />
     <div><p id="year">&copy2023</p></div>
-    <div><p id="web">WEB</p></div>
-    <div><p id="dev">DEVELOPER</p></div>
+    <div><h1 class="SlideInLeft" id="web">WEB</h1></div>
+    <div><p class="SlideInLeft" id="dev">DEVELOPER</p></div>
 
-    <img id="me" src="me.png">
+    <img id="me" src="me.png" />
 
     <div class="mobilemenu">
       <ul>
-        <li>
-          Profile
-        </li>
-        <li>
-          Profile
-        </li>
-        <li>
-          Profile
-        </li>
-        <li>
-          Profile
-        </li>
-        <li>
-          Profile
-        </li>
-        <li>
-          Profile
-        </li>
+        <li>Profile</li>
+        <li>Profile</li>
+        <li>Profile</li>
+        <li>Profile</li>
+        <li>Profile</li>
+        <li>Profile</li>
       </ul>
-    
     </div>
-    
-    <div class="navigation">
-        <button onclick="profilepopup()" class="item"><i class="fa-regular fa-user fa-2xl" style="color: #f0f0f0;"></i></button>
-        <button onclick="stackopenpopup()" class="item"><i class="fa-brands fa-stack-overflow fa-2xl" style="color: #f0f0f0;"></i></button>
-        <button onclick="phonepopup()" class="item"><i class="fa-solid fa-phone fa-2xl" style="color: #f0f0f0;"></i></button>
-        <button onclick="emailpopup()" class="item"><i class="fa-solid fa-envelope fa-2xl" style="color: #f0f0f0;"></i></button>
-        <a class="item"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #f0f0f0;"></i></a>
-        <a class="item"><i class="fa-brands fa-instagram fa-2xl" style="color: #f0f0f0;"></i></a>
-        <a class="item"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f0f0f0;"></i></a>
-        <a class="item"><i class="fa-brands fa-github fa-2xl" style="color: #f0f0f0;"></i></a>
+    <section id="about">
+      <div class="leftdiv">
+        <h1>About me</h1>
 
-        <div class="profilepopup" id="profilepopup">
+        <p>
+          With a solid foundation in software engineering, I have honed my skills to specialize 
+          in frontend web development. I am driven by a relentless curiosity to create 
+          visually stunning and highly functional websites that leave a lasting impression.
+          Thank you for visiting my portfolio. Let's build something incredible together!
+        </p>
+        <button id="emailbtn">Hire me!</button>
+      </div>
 
-          <div class="profile-container">
-
+      <div class="rightdiv">
+        <h1>Tech-Stack</h1>
+        <div class="cube">
+        <div class="box">
+          <div class="card" id="front">
+            HTML<i class="fa-brands fa-html5"></i>
           </div>
-            
-        </div>
+          <div class="card" id="back">
+            HTML<i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="card" id="left">JS<i class="fa-brands fa-js"></i></div>
 
-        <div class="stackpopup" id="stackpopup">
-            <div class="stack-container">
-                
-                <div class="main-item">
-                    Stack 
-                </div>
-                
-                <ul>
-                    <li>
-                      <div class="line-vertical"></div>
-                      <div class="line-horizontal"></div>
-                      <p>
-                        HTML
-                      </p>
-                    </li>
-                    <li>
-                      <div class="line-vertical"></div>
-                      <div class="line-horizontal"></div>
-                      <p>
-                        TailwindCSS
-                      </p>
-                    </li>
-                    <li>
-                      <div class="line-vertical"></div>
-                      <div class="line-horizontal"></div>
-                      <p>
-                        JavaScript
-                      </p>
-                    </li>
-                    <li>
-                      <div class="line-vertical"></div>
-                      <div class="line-horizontal"></div>
-                      <p>
-                        ReactJs
-                      </p>
-                    </li>
-                </ul>
-              </div>
+          <div class="card" id="right">
+            REACT<i class="fa-brands fa-react"></i>
+          </div>
+          <div class="card" id="top">
+            CSS<i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="card" id="bottom">
+            CSS<i class="fa-brands fa-css3-alt"></i>
+          </div>
         </div>
+      </div>
+      <div class="stacktext">
+     
+      <p>
+        I bring visions to life through the implementation of CMS and core technologies like HTML, CSS, 
+        and JavaScript. 
+        I pride myself on delivering solutions that not only meet but exceed client expectations.
+      </p>
+    </div>
+      </div>
+    </section>
+
+    <div class="navigation">
+      <button onclick="profilepopup()" class="item">
+        <i class="fa-regular fa-user fa-2xl" style="color: #f0f0f0"></i>
+      </button>
+      <button onclick="phonepopup()" class="item">
+        <i class="fa-solid fa-phone fa-2xl" style="color: #f0f0f0"></i>
+      </button>
+      <button onclick="emailpopup()" class="item">
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #f0f0f0"></i>
+      </button>
+      <a class="item"
+        ><i class="fa-brands fa-x-twitter fa-2xl" style="color: #f0f0f0"></i
+      ></a>
+      <a class="item"
+        ><i class="fa-brands fa-instagram fa-2xl" style="color: #f0f0f0"></i
+      ></a>
+      <a class="item"
+        ><i class="fa-brands fa-linkedin fa-2xl" style="color: #f0f0f0"></i
+      ></a>
+      <a class="item"
+        ><i class="fa-brands fa-github fa-2xl" style="color: #f0f0f0"></i
+      ></a>
+
+      <div class="profilepopup" id="profilepopup">
+        <div class="profile-container"></div>
+      </div>
     </div>
     <script src=""></script>
-</body>
+  </body>
 </html>
