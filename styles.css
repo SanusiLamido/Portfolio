@@ -189,8 +189,12 @@ body {
 }
 
 .rightdiv p{
-  margin: 150px 25px;
+  margin: 100px 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
+
+
 
 .leftdiv h1{
   font-size: 50px;
@@ -199,9 +203,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.leftdiv p{
+  font-weight: bold;
+  font-size: 20px;
+  color: #b2b2b2;
+}
 .stacktext{
   margin-left: 50px;
-
+  color: #b2b2b2;
 }
 
 
@@ -243,7 +252,7 @@ body {
   padding: 100px 0px;
   color: black;
   background-color: rgba(254, 254, 254, 0.2);
-  border: 1px solid rgb(105, 0, 0);
+  border: 1px solid white;
   font-size: 32px;
   box-sizing: border-box;
   position: absolute;
@@ -251,31 +260,31 @@ body {
 }
 
 #front{
-  transform: translateZ(-100px);
+  transform: translateZ(100px);
 }
 
 #back{
-  transform: translateZ(100px);
+  transform: translateZ(-100px);
 }
 
 #left{
   right: 150px;
-  transform: rotateY(-90deg);
+  transform: rotateY(90deg);
 }
 
 #right{
   left: 100px;
-  transform: rotateY(90deg);
+  transform: rotateY(-90deg);
 }
 
 #top{
   bottom: 150px;
-  transform: rotateX(90deg);
+  transform: rotateX(-90deg);
 }
 
 #bottom{
   top: 100px;
-  transform: rotateX(-90deg);
+  transform: rotateX(90deg);
 }
 
 
