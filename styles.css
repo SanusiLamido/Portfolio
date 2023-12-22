@@ -37,6 +37,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
+  height: 100%;
 }
 
 #bg {
@@ -117,31 +118,41 @@ h1 {
   display: flex;
   background-image: url(secbg.png);
   background-size: cover;
-  padding: 20% 10px 20px 10px;
+  padding: 12% 5% 0 5%;
   margin: 0 -10px 0 -10px;
 }
 
 .leftdiv {
   width: 700px;
-  height: 500px;
+  height: 450px;
   border: none;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 10px;
   padding: 5px 100px 100px 100px;
   color: black;
+  background-color: rgba(1, 40, 64, 0.638);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  
 }
 
 
 .leftdiv h1 {
   font-size: 70px;
   font-weight: bolder;
-  color: rgba(3, 148, 252, 0.846);
+  background-image: radial-gradient(circle, #ffffff, #4FACF7);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .leftdiv p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
 }
 
@@ -167,25 +178,22 @@ h1 {
 
 .rightdiv {
   width: 600px;
-  height: 500px;
+  height: 600px;
   border: none;
   justify-content: center;
-  background-color: rgba(1, 40, 64, 0.638);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  margin: 0 auto;
-  border-radius: 10px;
-  padding: 20px;
+  
+  padding:50px 20px 20px 20px;
   display: flex;
-  border: 1px solid rgb(6, 124, 198);
 }
 
 .rightdiv h1 {
   position: absolute;
   font-size: 50px;
   font-weight: bolder;
-  color: white;
+  color: transparent;
+  background-image: radial-gradient(circle, #000000, #4FACF7);
+  background-clip: text;
+  -webkit-background-clip: text;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -261,15 +269,20 @@ h1 {
 }
 
 #projects {
-  width: 100%;
   display: flex;
+  padding: 12% 5% 10% 5%;
+  margin: 0 -10px 0 -10px;
+  background-color: 031e39;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .projectsrightdiv {
   width: 700px;
   height: 500px;
   border: none;
-
+  color: #000;
   margin: 0 auto;
   border-radius: 10px;
   padding: 20px 100px 100px 100px;
@@ -298,7 +311,7 @@ h1 {
   border: none;
   box-shadow: none;
   border-radius: 5px;
-  background-color: rgba(3, 148, 252, 0.2);
+  background-color: rgb(3, 148, 252);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -329,18 +342,28 @@ h1 {
   border: none;
   box-shadow: none;
   border-radius: 5px;
-  background-color: rgba(3, 148, 252, 0.2);
+  background-color: rgb(3, 148, 252);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   color: white;
 }
 
+#nav {
+  display: flex;
+  padding: 12% 5% 10% 5%;
+  margin: 0 -10px 0 -10px;
+  background-image: url(secbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+
+}
 .navigation {
   width: 750px;
   display: flex;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.221);
+  border: 1px solid #031e39;
   border-width: thin;
   border-radius: 10px;
   height: 110px;
@@ -353,7 +376,6 @@ h1 {
 
 button {
   display: flex;
-  color: white;
   padding: auto;
   justify-content: center;
   align-items: center;
@@ -365,7 +387,7 @@ button {
   height: 100px;
   justify-content: center;
   align-items: center;
-  border: 1px rgb(6, 124, 198) solid;
+  border: 1px #031e39 solid;
   border-radius: 10px;
   margin: 5px;
   display: flex;
@@ -374,7 +396,7 @@ button {
 
 .item:hover,
 .item:active {
-  background-color: rgba(254, 254, 254, 0.2);
+  background-color: #031e3945;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -434,13 +456,17 @@ button {
   font-size: xx-large;
 }
 
+footer{
+  display: flex;
+  justify-content: flex-end;
+  height: 3%;
+  margin: 0;
+  padding: 0;
+}
 #pb {
   color: #b2b2b2;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 @media screen and (max-width: 1024px) {
   #logo {
@@ -521,12 +547,6 @@ button {
   }
 
   #pb {
-    width: 300px;
-    height: 150px;
-    margin-top: 1150px;
-    margin-left: 700px;
-    border-radius: 10px;
-    position: absolute;
     color: #b2b2b2;
   }
 }
