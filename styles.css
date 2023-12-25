@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  font-size: larger;
 }
 
 #dlbtn {
@@ -100,11 +101,14 @@ body {
   display: flex;
   justify-content: center;
   margin-left: 250px;
-  margin-top: 550px;
+  margin-top: 320px;
   position: absolute;
   background-color: rgba(3, 148, 252, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  color: #000;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 h1 {
@@ -118,46 +122,44 @@ h1 {
   display: flex;
   background-image: url(secbg.png);
   background-size: cover;
-  padding: 12% 5% 0 5%;
-  margin: 0 -10px 0 -10px;
+  padding: 12% 5% 0 2%;
+  margin: 0 -10px 0 0px;
 }
 
 .leftdiv {
   width: 700px;
-  height: 450px;
+  height: 350px;
   border: none;
   margin: 0;
   border-radius: 10px;
   padding: 5px 100px 100px 100px;
   color: black;
-  background-color: rgba(1, 40, 64, 0.638);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  
+ 
   
 }
 
 
-.leftdiv h1 {
+.leftdiv h1{
   font-size: 70px;
   font-weight: bolder;
-  background-image: radial-gradient(circle, #ffffff, #4FACF7);
-  color: transparent;
+  
+  
   background-clip: text;
   -webkit-background-clip: text;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  
 }
 
 .leftdiv p {
-  font-weight: bold;
+  
   font-size: 15px;
   color: black;
+  padding: 0px;
 }
 
 #hirebtn {
-  float: right;
+  
   height: 30px;
   width: 100px;
   margin-top: 15px;
@@ -178,11 +180,11 @@ h1 {
 
 .rightdiv {
   width: 600px;
-  height: 600px;
+  height: 420px;
   border: none;
   justify-content: center;
   
-  padding:50px 20px 20px 20px;
+  padding:10px 20px 20px 20px;
   display: flex;
 }
 
@@ -190,10 +192,7 @@ h1 {
   position: absolute;
   font-size: 50px;
   font-weight: bolder;
-  color: transparent;
-  background-image: radial-gradient(circle, #000000, #4FACF7);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -240,6 +239,11 @@ h1 {
   border-radius: 8px;
 }
 
+.card img{
+  height: 50px;
+  width: 50px;
+}
+
 #front {
   transform: translateZ(100px);
 }
@@ -278,14 +282,19 @@ h1 {
 
 }
 
+.projectsrightdiv h1{
+  color: white;
+}
 .projectsrightdiv {
-  width: 700px;
-  height: 500px;
+  width: 900px;
+  height: 300px;
   border: none;
   color: #000;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px 100px 100px 100px;
+  padding: 20px 100px 100px 800px;
+  background-color: rgba(139, 205, 252, 0.462); 
+  
 }
 .projectsleftdiv {
   width: 700px;
@@ -300,14 +309,24 @@ h1 {
   padding: 20px;
   display: flex;
   border: 1px solid rgb(6, 124, 198);
-  margin: 20px;
+  margin: -60px 20px 20px 20px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsleftdiv img{
+  width: 650px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 0 auto;
 }
 
 #demobtn {
   height: 30px;
   width: 100px;
 
-  margin: 15px 15px 15px 0px;
+  margin: 0px 15px 15px 0px;
   border: none;
   box-shadow: none;
   border-radius: 5px;
@@ -324,21 +343,26 @@ h1 {
 }
 .stkctn {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 50%;
 }
-.ts {
-  height: 50px;
-  width: 50px;
-  border-radius: 3px;
-  border: 1px solid rgb(6, 124, 198);
+
+.ts{
+  padding: 10px;
+  color: white;
 }
+
+.ts img{
+   width:50px;
+   height: 50px;
+}
+
 
 #codebtn {
   height: 30px;
   width: 100px;
 
-  margin-top: 15px;
+  margin-top: 0px;
   border: none;
   box-shadow: none;
   border-radius: 5px;
@@ -352,11 +376,12 @@ h1 {
 #nav {
   display: flex;
   padding: 12% 5% 10% 5%;
-  margin: 0 -10px 0 -10px;
+  margin: 0 -20px 0 -20px;
   background-image: url(secbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  width: 100%;
 
 }
 .navigation {
@@ -458,10 +483,17 @@ button {
 
 footer{
   display: flex;
-  justify-content: flex-end;
-  height: 3%;
+  justify-content: space-between;
+  height: 1%;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 20px;
+  color: rgba(254, 254, 254, 0.642);
+  font-style: oblique;
+}
+
+.flogo{
+  height: 50px;
+  padding-top: 1%;
 }
 #pb {
   color: #b2b2b2;
