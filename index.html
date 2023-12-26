@@ -18,10 +18,12 @@
   </head>
 
   <body>
-    <div class="myheader">
+    <div id="myheader">
       <img id="logo" alt="logo" src="logo2.png" />
-      <button id="dlbtn">Resume <i class="fa-solid fa-download"></i></button>
+      <button id="download-btn">Resume <i class="fa-solid fa-download"></i></button>
     </div>
+
+    <section id="hero">
     <div id="bio">
       <p>
         Specialized in scalable and responsive web applications, combining
@@ -29,14 +31,13 @@
       </p>
     </div>
 
-
-    <img id="bg" src="bg2.jpg" />
-    <div><p id="year">&copy2024</p></div>
-    <div><h1 class="SlideInLeft" id="web">WEB</h1></div>
-    <div><p class="SlideInLeft" id="dev">DEVELOPER</p></div>
-
     <img id="me" src="me.png" />
 
+    <div><h1 id="web">WEB</h1></div>
+    <div><h1 id="dev">DEVELOPER</h1></div>
+    <img id="background-image" src="bg2.jpg"/>
+    <div><p id="year">&copy2024</p></div>
+  </section>
     <section id="about">
       <div class="leftdiv">
         <h1>About me</h1>
@@ -59,7 +60,7 @@
               <img src="html-5.svg">
             </div>
             <div class="card" id="back">
-              <img src="html-5.svg">
+              <img src="wordpress.svg">
             </div>
             <div class="card" id="left">
               <img src="js.svg">
@@ -167,10 +168,10 @@
       <a class="item"
         ><i class="fa-brands fa-instagram fa-2xl" style="color: #031e39"></i
       ></a>
-      <a class="item"
+      <a class="item" href="https://github.com/SanusiLamido"
         ><i class="fa-brands fa-linkedin fa-2xl" style="color: #031e39"></i
       ></a>
-      <a class="item"
+      <a class="item" href="https://github.com/SanusiLamido"
         ><i class="fa-brands fa-github fa-2xl" style="color: #031e39"></i
       ></a>
 
@@ -181,7 +182,7 @@
     </section>
 
 
-    <footer>
+    <footer class="foot">
 <p>
  &copy2024
 </p>

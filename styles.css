@@ -1,17 +1,27 @@
+body {
+  background-color: #031e39;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 #logo {
   width: 200px;
   margin-left: -75%;
   position: absolute;
 }
 
-.myheader {
+#myheader {
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: larger;
 }
 
-#dlbtn {
+#download-btn {
   float: right;
   height: 30px;
   width: 100px;
@@ -27,7 +37,7 @@
   color: white;
 }
 
-#dlbtn:hover{
+#download-btn:hover{
   background-color: rgba(3, 148, 252, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -36,75 +46,60 @@
   cursor: pointer;
 }
 
-#dllogo {
-  height: 10px;
-  width: 10px;
-}
-
-
-body {
-  background-color: #031e39;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  overflow-x: hidden;
-  height: 100%;
-}
-
-#bg {
-  width: 750px;
-  height: 650px;
+#background-image {
+  width: 60%;
+  height: 20%;
   border-radius: 25px;
-  margin-left: 25%;
+  margin: 5% 20% 5% ;
 }
 
 #web {
-  font-size: 8em;
+  font-size: 8vw;
   position: absolute;
-  margin-top: -400px;
-  margin-left: 500px;
+  margin: 15% 0 0 30%;
   font-weight: bold;
   color: rgb(6, 124, 198);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #dev {
-  font-size: 8em;
+  font-size: 8vw;
   position: absolute;
-  margin-top: -230px;
-  margin-left: 550px;
+  margin: 23% 0 0 40%;
   font-weight: bold;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #bio {
-  width: 300px;
-  height: 150px;
-  margin-top: 50px;
-  margin-left: 80%;
+  width: 15%;
+  height: 20%;
+  margin: 4% 0 0 80%;
   border-radius: 10px;
   position: absolute;
   color: #b2b2b2;
+  font-size: 1vw;
 }
 
 #year {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  margin-left: 1150px;
-  margin-top: -100px;
+  margin: -10% 0 0 80%;
   color: rgb(255, 68, 0);
+  font-size: 1vw;
 }
 
 #me {
-  height: 600px;
-  margin-top: -600px;
-  margin-left: -12px;
+  height: 80%;
+  margin-top: 1%;
+  margin-left: -2%;
+  position: absolute;
 }
 
 #sphere {
   border-radius: 100px;
-  width: 200px;
-  height: 200px;
+  width: 13%;
+  height: 25%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   align-items: center;
   display: flex;
@@ -134,7 +129,6 @@ h1 {
   padding: 12% 5% 0 2%;
   margin: 0 -10px 0 -10px;
   width: 100%;
-
 }
 
 .leftdiv {
@@ -145,28 +139,23 @@ h1 {
   border-radius: 10px;
   padding: 5px 100px 100px 100px;
   color: black;
-  
- 
-  
+  font-size: 1vw;
 }
 
 
 .leftdiv h1{
   font-size: 70px;
   font-weight: bolder;
-  
-  
   background-clip: text;
   -webkit-background-clip: text;
   font-family: Arial, Helvetica, sans-serif;
-  
-}
+  }
 
 .leftdiv p {
-  
   font-size: 15px;
   color: black;
   padding: 0px;
+  font-size: 1vw;
 }
 
 #hirebtn {
@@ -290,10 +279,11 @@ h1 {
 #projects {
   display: flex;
   padding: 12% 5% 10% 5%;
-  margin: 0 -10px 0 -10px;
+  
   background-color: 031e39;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 
 }
 
@@ -301,38 +291,36 @@ h1 {
   color: white;
 }
 .projectsrightdiv {
-  width: 900px;
-  height: 300px;
+  width: 90%;
+  height: 15%;
   border: none;
   color: #000;
-  margin: 0 auto;
+  margin: 3% 10% 0 0;
   border-radius: 10px;
-  padding: 20px 100px 100px 800px;
+  padding: 1% 5% 1% 60%;
   background-color: rgba(139, 205, 252, 0.462); 
+  font-size: 1vw;
   
 }
 .projectsleftdiv {
-  width: 700px;
-  height: 500px;
+  width: 50%;
+  height: 65%;
   border: none;
   background-color: rgba(3, 148, 252, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  margin: 0 auto;
   border-radius: 10px;
-  padding: 20px;
   display: flex;
   border: 1px solid rgb(6, 124, 198);
-  margin: -60px 20px 20px 20px;
+  margin: 0;
   position: absolute;
   align-items: center;
   justify-content: center;
 }
 
 .projectsleftdiv img{
-  width: 650px;
-  height: 400px;
+  width: 95%;
+  height: 85%;
   border-radius: 10px;
   padding: 0 auto;
 }
@@ -355,6 +343,7 @@ h1 {
 .btnctn {
   display: flex;
   padding-top: 15%;
+  margin-bottom: -12%;
 }
 .stkctn {
   display: flex;
@@ -410,18 +399,21 @@ h1 {
 
 }
 .navigation {
-  width: 750px;
+  width: 55%;
   display: flex;
   justify-content: center;
   border: 1px solid #031e39;
   border-width: thin;
   border-radius: 10px;
-  height: 110px;
-  margin-left: 250px;
+  height: 55%;
+  margin-left: auto;
+  margin-right:auto ;
   margin-bottom: 20px;
   margin-top: 50px;
-  float: bottom;
-  position: absolute;
+}
+
+a{
+ text-decoration: none;
 }
 
 button {
@@ -433,8 +425,9 @@ button {
 }
 
 .item {
-  width: 100px;
-  height: 100px;
+  width: 15%;
+  height: 90%;
+  justify-content: space-between;
   justify-content: center;
   align-items: center;
   border: 1px #031e39 solid;
@@ -512,10 +505,11 @@ footer{
   justify-content: space-between;
   height: 1%;
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 0 50px 0 100px;
   color: rgba(254, 254, 254, 0.642);
   font-style: oblique;
 }
+
 
 .flogo{
   height: 50px;
@@ -525,120 +519,3 @@ footer{
   color: #b2b2b2;
 }
 
-
-@media screen and (max-width: 1024px) {
-  #logo {
-    width: 300px;
-    margin-left: 20px;
-    margin-top: 40px;
-  }
-
-  .myheader {
-    display: flex;
-  }
-
-  #emailbtn {
-    height: 30px;
-    width: 100px;
-    margin-left: 450px;
-    margin-top: 50px;
-  }
-
-  #dlbtn {
-    height: 30px;
-    width: 100px;
-    margin-left: 15px;
-    margin-top: 50px;
-  }
-
-  #bg {
-    width: 500px;
-    height: 350px;
-    border-radius: 25px;
-    margin-left: 25%;
-    margin-top: 400px;
-  }
-
-  #web {
-    font-size: 5em;
-    margin-top: -250px;
-    margin-left: 300px;
-  }
-
-  #dev {
-    font-size: 5em;
-    margin-top: -150px;
-    margin-left: 350px;
-  }
-
-  #bio {
-    width: 300px;
-    height: 150px;
-    margin-top: 200px;
-    margin-left: 500px;
-  }
-
-  #year {
-    margin-left: 780px;
-  }
-  #me {
-    height: 600px;
-    margin-top: -350px;
-    margin-left: -12px;
-  }
-
-  #sphere {
-    margin-left: 250px;
-    margin-top: 650px;
-  }
-  .navigation {
-    width: 850px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.221);
-    border-width: thin;
-    border-radius: 10px;
-    height: 110px;
-    margin-left: 70px;
-    margin-top: 100px;
-    float: bottom;
-  }
-
-  #pb {
-    color: #b2b2b2;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .navigation {
-    visibility: hidden;
-  }
-
-  #sphere {
-    visibility: hidden;
-  }
-
-  #me {
-    visibility: hidden;
-  }
-
-  #emailbtn {
-    visibility: hidden;
-  }
-
-  #dlbtn {
-    visibility: hidden;
-  }
-
-  #bg {
-    width: 402px;
-    height: 350px;
-    border-radius: 25px;
-    margin-left: 25%;
-    margin-top: 400px;
-  }
-
-  #pb {
-    visibility: hidden;
-  }
-}
